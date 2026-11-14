@@ -9,11 +9,11 @@ on:
       kbranch:
         description: "ACK branch matching your kernel: android12-5.10 | android13-5.15 | android14-6.1 | android15-6.6"
         required: true
-        default: "android13-5.15"
+        default: "android15-6.6"
       kcommit:
         description: "Exact ACK commit (COMMIT_SHORT / full hash). Overrides kbranch tip if set."
         required: true
-        default: "4ea0fcb5d1308f2f5a5dec0a3a5c8f1b261e00c7"
+        default: "3a7d1771d492"
       clang_ver:
         description: "Android Clang version (e.g. clang-r450784e). See device-profile.txt / notes."
         required: true
@@ -25,11 +25,11 @@ on:
       lto:
         description: "LTO mode to match device: full | thin | none"
         required: true
-        default: "full"
+        default: "none"
       driver:
         description: "Driver: mt76x2u | mt76x0u | mt7601u | rt2800usb | ath9k_htc | rtl8xxxu | rtl88xxau_oot"
         required: true
-        default: "mt76x2u"
+        default: "rt2800usb"
       oot_repo:
         description: "For rtl88xxau_oot only: git URL of the out-of-tree driver"
         required: false
